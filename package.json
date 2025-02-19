@@ -15,9 +15,9 @@
     "url": "https://github.com/mthomas60wctc/Grocery-App/issues"
   },
   "homepage": "https://github.com/mthomas60wctc/Grocery-App#readme",
-  "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "sass": "^1.85.0"
-  }
+  },
+  "description": ""
 }
