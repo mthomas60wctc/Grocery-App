@@ -2,8 +2,12 @@ $primary: #931F1D;
 $secondary: #3EA1B0;
 $success: #22BF6E;
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+}
 img{
     margin:5px;
 }
-
-@import '../node_modules/bootstrap/scss/bootstrap';
