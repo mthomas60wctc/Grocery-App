@@ -17,7 +17,9 @@
   "homepage": "https://github.com/mthomas60wctc/Grocery-App#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "sass": "^1.85.0"
+    "bootstrap-icons": "^1.11.3",
+    "sass": "^1.85.0",
+    "scss": "^0.2.4"
   },
   "description": ""
 }
