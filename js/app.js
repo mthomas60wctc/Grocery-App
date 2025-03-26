@@ -35,11 +35,28 @@ const app = createApp({
                         {name: 'Chili powder', qty: 7}, 
                         {name: 'Cumin', qty: 2}, 
                         {name: 'Salt', qty: 3}, 
-                        {name: 'Cornstarch', qty: 2}], 
+                        {name: 'Cornstarch', qty: 2}
+                    ], 
                     Steps: [
                         'Brown ground beef', 
                         'Add seasoning and tomatoes', 
-                        'Simmer for 2 hours']}
+                        'Simmer for 2 hours'
+                    ]
+                },
+                {name: 'Pancakes', feeds: 4, prep: 45, 
+                    ingredients: [
+                        {name: 'Flour', qty: 4}, 
+                        {name: 'Eggs', qty: 2}, 
+                        {name: 'Milk', qty: 7}, 
+                        {name: 'Water', qty: 3}, 
+                        {name: 'Butter', qty: 2}, 
+                    ],
+                    Steps: [
+                        'Mix dry ingredients', 
+                        'Add in wet, leave some butter', 
+                        'Grease pan with remaining butter, cook pancakes'
+                    ]
+                },
             ]
         };
     },

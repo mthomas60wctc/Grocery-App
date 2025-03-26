@@ -31,7 +31,7 @@ const RecipeListItem = {
                 <i v-if="canMake==0" style = "color:#dc3545;" class="bi bi-x-circle"></i>
                 <i v-if="canMake==1" style = "color:#ffc107;" class="bi bi-dash-circle"></i>
                 <i v-if="canMake==2" style = "color:#20c997;" class="bi bi-check-circle"></i>
-                {{item.name + canMake}}
+                {{item.name}}
             </div>
             <div class="row">
                 <span width="100">{{"Feeds: " + item.feeds}}</span>
