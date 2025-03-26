@@ -1,6 +1,6 @@
 import AppModal from "./AppModal.js";
 
-const AddItemModal = {
+const RecipeModal = {
   components: {
     AppModal,
   },
@@ -14,7 +14,7 @@ const AddItemModal = {
         unit: '',
         purchased: false
       },
-      addItemModal: null,
+      recipeModal: null,
       unitSelectL: null,
     };
   },
@@ -22,7 +22,7 @@ const AddItemModal = {
   props: {
     title: {
       type: String,
-      default: "New Item"
+      default: "New Recipe"
     },
     foodList: {
       type: Object,
@@ -30,12 +30,8 @@ const AddItemModal = {
     },
     acceptText: {
         type: String,
-        default: "Continue"
+        default: "Make"
     },
-    quantityAttr: {
-      type: String,
-      default: "qty"
-    }
   },
 
   methods: {
@@ -63,11 +59,10 @@ const AddItemModal = {
         unit: '',
         purchased: false
       }
-
     },
     regulateText(val) {
       val = val.trim();
-      return val.charAt(0).toUpperCase() + val.slice(1).toLowerCase();
+      return val.charAt(0).toUpperCase() + val.slice(1);
     },
 
     populateAddUnit() {
@@ -119,4 +114,4 @@ const AddItemModal = {
     `,
 };
 
-export default AddItemModal;
+export default RecipeModal;

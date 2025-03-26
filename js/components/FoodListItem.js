@@ -48,7 +48,7 @@ const FoodListItem = {
     },
 
     template: `
-    <li class="list-group-item d-flex justify-content-between align-items-start">
+    <li class="list-group-item d-flex justify-content-between align-items-start" style="height: 72px;">
         <div v-if="editing" class="ms-2 me-auto">
             <div class="fw-bold">{{item.name}}</div>
             <div class="form-inline input-group row">            
@@ -58,16 +58,16 @@ const FoodListItem = {
                 </label>
             </div>
         </div>
-        <div v-else class="ms-2 me-auto">
+        <div v-else class="ms-2 me-aut">
             <div class="fw-bold">{{item.name}}</div>
-            <span>{{item[quantityAttr] + " " + item.unit}}</span>
+            <span >{{item[quantityAttr] + " " + item.unit}}</span>
         </div>
-        <label v-if="checkLabel != '' && !editing" class="me-1 mx-2 my-1">
-            <input class="form-check-input " type="checkbox" value="" v-model="item.purchased">
-            {{checkLabel}}
-        </label>
         <i v-if="editing" class="bi bi-check2-circle h3 mx-5" width="18" height="18" viewBox="0 0 16 16"  @click="editToggle"></i>
         <div v-else>
+            <label v-if="checkLabel != ''" class="me-1 mx-2 my-1">
+                <input class="form-check-input" type="checkbox" value="" v-model="item.purchased">
+                {{checkLabel}}
+            </label>
             <i class="bi bi-pencil-square h4 mx-2" @click="editToggle"></i>
             <confirmation-modal :title="'Remove ' + item.name" acceptText="Remove" ref=deleteModal @modal-confirmed="$emit('remove-item', item)">
                 <template #open>
